@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      width="device-width,"
+      initial-scale="1.0,"
+      maximum-scale="1.0,"
+      user-scalable="0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <script src="smoothScroll.js"></script>
+    <script src="libraries/p5.min.js"></script>
+    <!-- <script src="libraries/addons/p5.dom.min.js"></script> -->
+    <!-- <script src="libraries/addons/p5.sound.min.js"></script> -->
+    <script src="sketch.js"></script>
+    <script src="createHTMLInfoElements.js"></script>
+    <script src="autoScrollBottom.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>IMDB SEARCH</h1>
+      <p>by Max R.</p>
+    </header>
+
+    <div class="search-container">
+      <input
+        id="search-box"
+        type="text"
+        value=""
+        placeholder="Search for movies and TV shows here..."
+      />
+      <button id="b-search" class="btn-search" onclick="IMDBQueryStart(false);">
+        <i id="icon-search" class="fa fa-search fa-lg" aria-hidden="true"></i>
+      </button>
+    </div>
+    <script src="inputEventEnter.js"></script>
+    <div id="dr"></div>
+  </body>
+</html>
